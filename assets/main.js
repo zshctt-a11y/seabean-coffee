@@ -17,6 +17,18 @@
     if (href === page) a.classList.add('active');
   });
 
+  // 图片缺失回退：任一图片 404 时整页切换为品牌渐变占位
+  var photos = ['hero_sea_coffee.jpg', 'shop_exterior.jpg', 'shop_interior.jpg', 'shop_seating.jpg'];
+  var failed = 0;
+  photos.forEach(function (f) {
+    var im = new Image();
+    im.onerror = function () {
+      failed++;
+      if (failed >= 1) document.documentElement.classList.add('no-photos');
+    };
+    im.src = 'assets/' + f;
+  });
+
   // 入场动效
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
