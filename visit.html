@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>到访 · SEABEAN 海豆咖啡</title>
+<meta name="description" content="海豆咖啡门店信息：营业时间、地址、交通指引。深圳湾畔，等你来靠岸。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quattrocento+Sans:wght@400;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <svg class="brand-mark" viewBox="0 0 120 120" aria-hidden="true">
+      <circle cx="60" cy="60" r="42" fill="none" stroke="currentColor" stroke-width="9"/>
+      <path d="M18 52 Q27 40 36 52 T54 52 T72 52 T90 52" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="45" cy="43" r="5.5" fill="currentColor"/>
+    </svg>
+    <span class="brand-word">SEABEAN<small>海豆咖啡</small></span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">首页</a>
+    <a href="menu.html">菜单</a>
+    <a href="about.html">品牌</a>
+    <a href="visit.html">到访</a>
+  </nav>
+  <div class="header-hours"><span class="dot-live"></span>今日营业 08:00 – 21:00</div>
+</header>
+
+<section class="page-hero">
+  <p class="sec-label on-dark">VISIT US — 到访指引</p>
+  <h1>VISIT</h1>
+  <p class="ph-cn">等你来靠岸</p>
+  <p class="ph-sub">门店位于深圳湾畔的滨海路，距海堤步道仅 200 米。晨跑后来一杯，或是黄昏时看一场海上落日。</p>
+  <div class="ph-bubbles">
+    <span class="p1"></span><span class="p2"></span><span class="p3"></span>
+  </div>
+  <svg class="ph-wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70 L0 42 Q120 22 240 42 Q360 62 480 42 Q600 22 720 42 Q840 62 960 42 Q1080 22 1200 42 Q1320 62 1440 42 L1440 70 Z" fill="#F7F3EA"/>
+  </svg>
+</section>
+
+<!-- 门店信息 + 示意地图 -->
+<div class="visit-grid">
+  <div class="visit-info reveal">
+    <p class="sec-label">STORE INFO</p>
+    <h2>门店信息</h2>
+    <dl class="info-rows">
+      <div><dt>地址</dt><dd>深圳市南山区滨海路 23 号（近海堤步道入口）</dd></div>
+      <div><dt>营业时间</dt><dd>今日营业 08:00 – 21:00，全年无休</dd></div>
+      <div><dt>电话</dt><dd>+86 0755 8888 2764</dd></div>
+      <div><dt>邮箱</dt><dd>hello@seabean.coffee</dd></div>
+      <div><dt>地标</dt><dd>怀德大厦</dd></div>
+      <div><dt>公交</dt><dd>「滨海路站」M133 / M364 / 90 路</dd></div>
+      <div><dt>停车</dt><dd>街区东侧公共停车场，凭消费小票减免 2 小时</dd></div>
+      <div><dt>宠物</dt><dd>外摆区欢迎宠物，店内提供宠物饮水碗</dd></div>
+    </dl>
+  </div>
+
+  <div class="visit-map reveal" aria-label="位置示意地图（示意图）">
+    <svg viewBox="0 0 800 560" preserveAspectRatio="xMidYMid slice">
+      <!-- 海 -->
+      <path d="M0 0 L800 0 L800 190 Q720 160 640 190 Q560 220 480 190 Q400 160 320 190 Q240 220 160 190 Q80 160 0 190 Z" fill="#0B3C49"/>
+      <path d="M0 190 Q80 160 160 190 Q240 220 320 190 Q400 160 480 190 Q560 220 640 190 Q720 160 800 190 L800 560 L0 560 Z" fill="#3E8E93" opacity="0.35"/>
+      <!-- 沙滩 -->
+      <path d="M0 210 Q200 190 400 210 Q600 230 800 210 L800 240 Q600 260 400 240 Q200 220 0 240 Z" fill="#D9A45B" opacity="0.5"/>
+      <!-- 海堤步道 -->
+      <rect x="0" y="240" width="800" height="34" fill="#0B3C49" opacity="0.18"/>
+      <text x="30" y="262" font-size="15" fill="#0B3C49" opacity="0.7" font-family="serif" letter-spacing="2">海堤步道 SEAWALL PROMENADE</text>
+      <!-- 街道网格 -->
+      <g stroke="#F7F3EA" stroke-width="2" opacity="0.55">
+        <line x1="0" y1="330" x2="800" y2="330"/>
+        <line x1="0" y1="420" x2="800" y2="420"/>
+        <line x1="140" y1="274" x2="140" y2="560"/>
+        <line x1="420" y1="274" x2="420" y2="560"/>
+        <line x1="650" y1="274" x2="650" y2="560"/>
+      </g>
+      <text x="30" y="352" font-size="13" fill="#F7F3EA" opacity="0.8">滨海路 BINHAI RD.</text>
+      <text x="446" y="410" font-size="12" fill="#F7F3EA" opacity="0.65" transform="rotate(90 446 410)">海月路</text>
+      <!-- 街区块 -->
+      <g fill="#F7F3EA" opacity="0.12">
+        <rect x="160" y="286" width="240" height="30"/>
+        <rect x="440" y="286" width="190" height="30"/>
+        <rect x="30" y="345" width="90" height="60"/>
+        <rect x="450" y="345" width="180" height="60"/>
+        <rect x="170" y="440" width="230" height="100"/>
+        <rect x="440" y="440" width="190" height="100"/>
+      </g>
+      <!-- 地标标注 -->
+      <rect x="678" y="470" width="44" height="36" rx="4" fill="none" stroke="#D9A45B" stroke-width="2.5"/>
+      <line x1="678" y1="482" x2="722" y2="482" stroke="#D9A45B" stroke-width="1.5" opacity="0.7"/>
+      <line x1="678" y1="494" x2="722" y2="494" stroke="#D9A45B" stroke-width="1.5" opacity="0.7"/>
+      <line x1="694" y1="470" x2="694" y2="506" stroke="#D9A45B" stroke-width="1.5" opacity="0.7"/>
+      <text x="700" y="528" font-size="12" fill="#D9A45B" text-anchor="middle" letter-spacing="1">怀德大厦</text>
+      <!-- 步行虚线 -->
+      <path d="M700 464 Q560 425 440 380 Q360 345 300 320" fill="none" stroke="#D9A45B" stroke-width="2.5" stroke-dasharray="7 7"/>
+      <text x="520" y="420" font-size="12" fill="#D9A45B" opacity="0.9">步行即达</text>
+      <!-- 海浪装饰 -->
+      <g fill="none" stroke="#F7F3EA" stroke-width="2.5" opacity="0.5">
+        <path d="M60 60 Q90 42 120 60 T180 60 T240 60"/>
+        <path d="M420 70 Q450 52 480 70 T540 70 T600 70"/>
+        <path d="M640 100 Q670 82 700 100 T760 100"/>
+      </g>
+    </svg>
+
+    <div class="map-pin">
+      <svg viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M60 14 C38 14 22 31 22 52 C22 78 60 108 60 108 C60 108 98 78 98 52 C98 31 82 14 60 14 Z" fill="#E2735B"/>
+        <circle cx="60" cy="52" r="16" fill="#F7F3EA"/>
+      </svg>
+      <div class="mp-name">SEABEAN</div>
+      <div class="mp-sub">滨海路 23 号</div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="visit-cta">
+  <p class="sec-label on-dark" style="margin-bottom:14px">SEE YOU BY THE TIDE</p>
+  <h2>推门即海岸</h2>
+  <p>看完整菜单，或是直接来店里坐坐。长桌永远留一个位置给你。</p>
+  <div>
+    <a class="btn-foam" href="menu.html">看看菜单</a>
+    &nbsp;&nbsp;
+    <a class="btn-foam" style="background:transparent;color:var(--foam);border-color:rgba(247,243,234,.5)" href="mailto:hello@seabean.coffee">预约包场</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-inner" style="border-top:1px solid rgba(247,243,234,.12)">
+    <div class="foot-brand">SEABEAN<small>海豆咖啡</small></div>
+    <div class="foot-cols">
+      <div><h4>到访</h4><p>深圳市南山区滨海路 23 号<br>今日营业 08:00 – 21:00</p></div>
+      <div><h4>联系</h4><p><a href="mailto:hello@seabean.coffee">hello@seabean.coffee</a><br>+86 0755 8888 2764</p></div>
+      <div><h4>关注</h4><p><a href="#">微信公众号</a><br><a href="#">小红书 · 海豆咖啡</a></p></div>
+    </div>
+  </div>
+  <div class="foot-legal">© 2026 SEABEAN COFFEE — Where every cup meets the tide.</div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
